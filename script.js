@@ -91,7 +91,7 @@ function downloadResume() {
 }
 // Contact form submission
 // Initialize EmailJS with your User ID (do this once, e.g., in a global script)
-emailjs.init('UpMVyRljh792FF-B8'); // Replace with your EmailJS User ID
+emailjs.init('USER-ID'); // Replace with your EmailJS User ID
 
 function submitForm(event) {
     event.preventDefault();
@@ -113,8 +113,8 @@ function submitForm(event) {
         message: formData.get('message')
     };
     
-    // Send email using EmailJS
-    emailjs.send('service_yibh10t', 'template_33q750t', templateParams)
+    // Send email using EmailJS Replace service template id from yours 
+    emailjs.send('SERVICE ID', 'TEMPLATE ID', templateParams)
         .then((response) => {
             // Reset form
             form.reset();
