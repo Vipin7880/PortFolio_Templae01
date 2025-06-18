@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipin Kushwaha - Web & Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="shortcut icon" href="./Resources/Fav_icon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Custom Background Container -->
+    <!-- <div class="background-container">
+        <div class="animated-bg"></div>
+    </div> -->
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>VK</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content glass">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Vipin Kushwaha</span></h1>
+                <h2>Web & Software Developer</h2>
+                <p>Passionate about creating innovative digital solutions and bringing ideas to life through code.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="downloadResume()">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card glass">
+                    <div class="profile-img">
+                        <img src="./Resources/IMG_2495.jpg" alt="Loading">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Vipin Kushwaha</h3>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text glass">
+                    <h3>Hello! I'm Vipin Kushwaha</h3>
+                    <p>I'm a passionate Web and Software Developer with expertise in creating modern, responsive, and user-friendly applications. With a strong foundation in both frontend and backend technologies, I love turning complex problems into simple, beautiful solutions.</p>
+                    <p>My journey in software development started with curiosity and has evolved into a professional passion. I'm constantly learning new technologies and staying updated with the latest industry trends.</p>
+                    <div class="stats">
+                        <div class="stat glass">
+                            <h4>10+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat glass">
+                            <h4>1+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat glass">
+                            <h4>10+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Angular</span>
+                    
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <!-- <span class="skill-tag">Express.js</span> -->
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <!-- <span class="skill-tag">Docker</span> -->
+                        <!-- <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Figma</span> -->
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Admission Prediciton</h3>
+                        <p>A machine learning solution using Python, Pandas, and scikit-learn with linear regression to predict admission.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Skilt-Learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Text to Handwriting</h3>
+                        <p>A web application that converts typed text into realistic handwriting. Inspired by the original project by Saurabh Daware, this tool mimics the appearance of handwritten notes.</p>
+                        <div class="project-tech">
+                            <span>Html</span>
+                            <span>CSS</span>
+                            <span>Js</span>
+                            <span>Js Libraries</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vipin7880/Text-to-handwriting" target="_blank" class="btn-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://vipin7880.github.io/Text-to-handwriting/" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Template</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias necessitatibus hic, odio rerum neque odit dignissimos repellat illum cumque.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info glass">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kushwahavipin313@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 0000000000</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kushinagar, Uttar pradesh, India</span>
+                    </div>
+                    <div class="social-links">
+                        <!-- <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a> -->
+                        <a href="https://github.com/Vipin7880" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/itzz_Vipin9737" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/vipin-kushwaha/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Vipin Kushwaha</h3>
+                    <p>Web & Software Developer</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 Vipin Kushwaha. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
